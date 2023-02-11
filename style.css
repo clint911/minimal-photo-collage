@@ -1,0 +1,57 @@
+*{
+ margin: 0;
+ padding: 0;
+ color: white;
+}
+#container {
+ display: flex;
+ height: 400px;
+ background:rgb(1, 34, 1);
+}
+#leftbox{
+ width: 50%;
+}
+h1, p {
+    text-align: center;
+    margin: 100px;
+}
+p {
+  width: 40%;
+  margin: auto;
+}
+#rightbox {
+ width: 50%;
+ display: grid;
+ grid-template-column: repeat(3, 1fr);
+}
+#box {
+ background-size: cover;
+ display:flex;
+ justify-content: center;
+ flex-direction: column;
+ margin: 2px;
+ background-position: top;
+ transition: all ease-in-out 1s;
+}
+#box:hover {
+ cursor: pointer;
+ background-position: bottom;
+}
+.one {
+    grid-row: span 2;
+}
+.two {
+    grid-column: span 2;
+}
+.three {
+}
+.four{
+   grid-row: span 2;
+}
+.five{
+    grid-column: span 2;
+}
+.six{
+}
+.seven{
+}
